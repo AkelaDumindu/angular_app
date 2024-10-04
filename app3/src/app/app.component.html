@@ -1,0 +1,11 @@
+<input type="text" [(ngModel)]="customerId">
+
+<div style="width: 100%;height: 50px; border: 1px solid ; display: flex; align-items: center;">
+  <button routerLink="/customer/{{customerId}}" routerLinkActive="active">Customer</button>&nbsp;
+  <button routerLink="/product" routerLinkActive='active'>Product</button>&nbsp;
+  <button>Orders</button>
+</div>
+
+<hr>
+
+<router-outlet></router-outlet>
