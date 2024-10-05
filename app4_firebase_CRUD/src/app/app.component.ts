@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CustomerService } from './services/customer.service';
 import { response } from 'express';
@@ -9,7 +9,7 @@ import { error, log } from 'console';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
   customerForm = new FormGroup({
     name: new FormControl("", [Validators.required]),
@@ -18,6 +18,18 @@ export class AppComponent {
   });
   constructor(private customerService:CustomerService){
 
+  }
+  customerList:any[]=[];
+
+  ngOnInit(): void {   //fetch just triggle(load) user interface
+    this.customerService.loadAll().subscribe((data)=>{
+      this.customerList = data.map((e:any)=>{
+        return {
+          id:e.payload.doc.id,
+          ...e.payload.doc.data()    //... that mean add to the array
+        }
+      });
+    });
   }
 
   saveCustomer(){
