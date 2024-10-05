@@ -27,4 +27,9 @@ export class CustomerService {
     return this.firestore.collection('customer').doc(id).update(customer);
 
   }
+
+  deleteCustomer(id:any):Promise<any>{
+    return this.firestore.collection('customer').doc(id).delete();
+
+  }
 }

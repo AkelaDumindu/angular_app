@@ -40,6 +40,7 @@
             <th>Address</th>
             <th>Salary</th>
             <th>Update</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -50,6 +51,9 @@
             <td> {{tempCustomer.salary}} </td>
             <td>
                 <button class="btn btn-warning" routerLink="/update/{{tempCustomer.id}}">Update Customer</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="deleteCustomer(tempCustomer.id)">Delete Customer</button>
             </td>
         </tr>
     </tbody>

@@ -47,4 +47,17 @@ export class NewCustomerComponent implements OnInit {
     
   }
 
+  deleteCustomer(id:any){
+    if(confirm('Are you sure?')){
+      this.customerService.deleteCustomer(id).then(response=>{
+        console.log('cutomer deleted');
+        
+       }).catch((error)=>{
+        console.log(error);
+        
+       });
+    }
+
+  }
+
 }
