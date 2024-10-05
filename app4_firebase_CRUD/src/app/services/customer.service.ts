@@ -17,4 +17,14 @@ export class CustomerService {
   loadAll():Observable<any>{
      return this.firestore.collection('customer').snapshotChanges();
   }
+
+  findCustomer(id:any):Observable<any>{
+    return this.firestore.collection('customer').doc(id).valueChanges();
+
+  }
+
+  updateCustomer(id:any, customer:any):Promise<any>{
+    return this.firestore.collection('customer').doc(id).update(customer);
+
+  }
 }

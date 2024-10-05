@@ -10,6 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment.development';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { UpdateCustomerComponent } from './components/update-customer/update-customer.component';
+import { NewCustomerComponent } from './components/new-customer/new-customer.component';
 // import { NewProductComponent } from './components/product/inner_item/new-product/new-product.component';
 // import { UpdateProductComponent } from './components/product/inner_item/update-product/update-product.component';
 // import { GetProductComponent } from './components/product/inner_item/get-product/get-product.component';
@@ -17,6 +19,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 @NgModule({
   declarations: [
     AppComponent,
+    UpdateCustomerComponent,
+    NewCustomerComponent,
   ],
   imports: [
     BrowserModule,
