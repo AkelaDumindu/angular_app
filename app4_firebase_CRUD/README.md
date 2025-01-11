@@ -1,27 +1,10 @@
-# App2
+# Angular POS System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+## Overview
 
-## Development server
+The Angular POS System is a practice project developed to explore the fundamentals of Angular and its core features. This system streamlines product and order management through CRUD (Create, Read, Update, Delete) operations. It incorporates functionalities like user authentication, secure login, and efficient product management. By leveraging Angular's capabilities, this project demonstrates how to build robust and dynamic web applications.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Built with Angular Framework and TypeScript, the project highlights the power of component-based architecture and modular development. Angular's routing enhances navigation across the application, while SCSS and Bootstrap are used to deliver a responsive and visually appealing user interface. Firebase is integrated for authentication and real-time database management, ensuring secure and scalable functionality.
 
-## Code scaffolding
+This project provided hands-on experience with Angular's two-way data binding, services, and dependency injection, deepening my understanding of frontend development. It also served as an opportunity to improve my skills in designing user-friendly interfaces and implementing backend communication. The Angular POS System represents a key milestone in my learning journey, showcasing my growth as a developer.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
